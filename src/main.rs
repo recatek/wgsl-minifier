@@ -113,7 +113,7 @@ fn main() {
     }
 
     // Now minify!
-    minify_module(&mut module, KeepUnused::Yes);
+    minify_module(&mut module, KeepUnused::No);
 
     // Write to string
     let mut validator = naga::valid::Validator::new(
